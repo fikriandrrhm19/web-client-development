@@ -1,0 +1,13 @@
+# .dockerignore
+
+.env
+.env.local
+
+.git
+.next
+
+.vscode
+node_modules
+
+README.md
+cypress

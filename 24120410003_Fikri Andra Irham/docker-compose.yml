@@ -1,0 +1,15 @@
+# docker-compose.yml
+
+services:
+  portfolio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - RESEND_API_KEY=${RESEND_API_KEY}
+    container_name: my-portfolio-app
+    ports:
+      - "127.0.0.1:3000:3000"
+    restart: unless-stopped
+    env_file:
+      - ./.env

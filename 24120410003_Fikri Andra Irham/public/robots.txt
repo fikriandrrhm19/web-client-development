@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://fai.my.id/sitemap.xml
